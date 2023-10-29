@@ -7,7 +7,7 @@ import (
 )
 
 type PoolManager struct {
-	client         *rpc.Client
+	Client         *rpc.Client
 }
 
 func NewPoolManager(poolManager string) (*PoolManager, error) {
@@ -17,6 +17,6 @@ func NewPoolManager(poolManager string) (*PoolManager, error) {
 	}
 	log.Info("PoolManager initialized successfully", "PoolManager", poolManager)
 	return &PoolManager{
-		client:         client,
+		Client:         client,
 	}, nil
 }
